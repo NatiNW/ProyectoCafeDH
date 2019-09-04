@@ -20,6 +20,14 @@
   background-color: #ddd;
   color: black;
 }
+.descafeinados{
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Add a color to the active/current link */
 .topnav a.active {
@@ -30,4 +38,22 @@
 /* Right-aligned section inside the top navigation */
 .topnav-right {
   float: right;
+}
+img{
+  position: relative;
+  right: 100px;
+  width:300px;
+  object-fit: cover;
+}
+h3{
+  text-align: center;
+}
+h4{
+  text-align: center;
+}
+p{
+  background: #f2f2f2;
+  color: #494949;
+  width: auto;
+  margin: auto;
 }
