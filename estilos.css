@@ -21,3 +21,25 @@ p {
 .navbar-text {
   display: -webkit-inline-box;
 }
+
+@media (max-width: 320px) {
+  .navbar-text {
+    display: inline-block;
+  }
+}
+@media (max-width: 375px) {
+  .navbar-text {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar-text {
+    display: inline-block;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-text {
+    display: inline-block;
+  }
+}
