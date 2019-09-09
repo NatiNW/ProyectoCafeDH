@@ -1,0 +1,34 @@
+
+nav a img{
+  width: 80px;
+  height: 50px;
+}
+
+.inicio-productos {
+  text-align: center;
+  padding: 25px;
+}
+
+.inicio-lista-1{
+  text-align: center;
+  background-color: #8B4513;
+  padding: 25px;
+  color: white;
+}
+
+.inicio-lista-2{
+  text-align: center;
+  background-color: Peru;
+  padding: 25px;
+}
+
+footer{
+  padding: 20px;
+  background-color: #DEB887;
+  overflow: hidden;
+}
+
+footer div ul {
+  list-style-type: none;
+
+}
