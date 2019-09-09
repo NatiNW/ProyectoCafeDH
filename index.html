@@ -5,15 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Chilanka|Gayathri&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="stylesheet" href="css/general.css">
+
     <title>Coffee Code</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+      <div>
+        <nav class="navbar navbar-expand-lg">
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link">Llamanos!</a>
+              </li>
+                </ul>
+                <ul class="nav justify-content-end">
+
+      <a class="nav-link" href="#"><img src="img/shopping-cart.png" alt=""></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="login.html"><img src="img/login.png" alt="">Iniciar Sesión</a>
+    </li>
+
+  </ul>
+
+          </div>
+        </nav>
+
+
+      </div>
+
+      <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">
-          <img src="cafe.jpg" alt="Coffee">
+          <img src="img/pocillo_completo.jpg" alt="Coffee">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,19 +61,15 @@
               <a class="nav-link" href="#">Contacto</a>
             </li>
           </ul>
-          <ul class="navbar-nav navbar-text">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Search</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
+
         </div>
       </nav>
     </header>
 
-    <div class="container">
+
+
+    <div class= "carrusel" class="container">
+
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -55,13 +78,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/cafe1.jpg" class="d-block w-100" alt="...">
+            <img src="img/cafe1_con_placa.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/cafe2.jpg" class="d-block w-100" alt="...">
+            <img src="img/cafe2_con_placa.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/cafe3.jpg" class="d-block w-100" alt="...">
+            <img src="img/cafe3_con placa.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -74,18 +97,85 @@
         </a>
       </div>
     </div>
-    <div id="nos">
-      <h2>Nosotros</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <div id="boton-productos" class="container">
+      <div class="row">
+        <div class="col-12.col-sm-12.col-md-12.col-lg-12.col-xl-12" class="inicio-productos">
+        <button type="button" class="btn btn-primary">Conocé nuestros productos</button>
+        </div>
+      </div>
     </div>
-    <div id="cont">
-      <h2>Contacto</h2>
+
+    <div class="container" class="inicio-detalles-1">
+      <div class="row" class="inicio-lista-1">
+        <div class="col-12.col-sm-4.col-md-4.col-lg-4.col-xl-4">
+          <div class="practicos">
+          <h2>Prácticos</h2>
+          <p>Cápsulas para que las lleves a cualquier lado</p>
+          </div>
+        </div>
+        <div class="col-12.col-sm-4.col-md-4.col-lg-4.col-xl-4">
+          <div class="adaptables">
+          <h2>Adaptables</h2>
+          <p>Podés usarlas en todos los modelos de máquinas</p>
+          </div>
+        </div>
+        <div class="col-12.col-sm-4.col-md-4.col-lg-4.col-xl-4">
+          <div class="riquisimo">
+          <h2>¡Riquísimo!</h2>
+          <p>Nuestros blends están hechos con los más delicados productos</p>
+        </div>
+      </div>
+      </div>
     </div>
 
-      <footer>
+<div class="container" class="inicio-detalles-2">
+      <div class="row">
+        <div class="col-12.col-sm-4.col-md-4.col-lg-4.col-xl-4" class="lista-2">
+          <div class="compra">
+          <h2>Comprá</h2>
+          <p>Hacelo desde tu celular o llamanos al 5555-5555</p>
+          </div>
+        </div>
+        <div class="col-12.col-sm-4.col-md-4.col-lg-4.col-xl-4">
+          <div class="paga">
+            <h2>Pagá</h2>
+          <p>Podés abonar tu compra con Tarjeta de débito, crédito y MercadoPago</p>
+          </div>
+        </div>
+        <div class="col-12.col-sm-4.col-md-4.col-lg-4.col-xl-4">
+          <div class="recibilo">
+            <h2>Recibilo donde estés</h2>
+          <p>Te lo podemos enviar con Glovo, Rappi o PedidosYa</p>
+          </div>
+        </div>
+      </div>
+</div>
 
-    <h4>Coffee Code</h4>
 
+  <footer>
+<div class="container">
+  <div class="row">
+    <div class="col-12.col-md-6.col-xl-6">
+    <h6>Coffee Code</h6>
+    <ul>
+      <li><a href="">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="">Nosotros</a></li>
+      <li><a href="contacto.html">Contactanos</a></li>
+    </ul>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-12.col-md-6.col-xl-6">
+    <h6>Redes</h6>
+    <ul>
+      <li><a href="">Facebook</a></li>
+      <li><a href="">Instagram</a></li>
+    </ul>
+    </div>
+  </div>
+</div>
       </footer>
 
 
