@@ -1,8 +1,16 @@
-img {
+img{
   position: relative;
-  width: 30px;
+  width: 100px;
+  max-width: 280px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
-
+.article{
+  margin: 15px;
+  text-align: center;
+}
 h3 {
   text-align: center;
 }
@@ -16,10 +24,15 @@ p {
   color: #494949;
   width: auto;
   margin: auto;
-}
 
+}
+.content{
+  display: flex;
+  flex-direction: column;
+}
 .navbar-text {
   display: -webkit-inline-box;
+
 }
 
 @media (max-width: 320px) {
