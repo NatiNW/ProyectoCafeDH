@@ -1,20 +1,11 @@
-.general{
-  padding: 29px;
-}
-
-
 img{
   position: relative;
   width: 100px;
-  height: auto;
   max-width: 280px;
-  margin: auto;
-  display: block;
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-  border-radius: 55%;
-  box-shadow: 5px 5px 0px #800000;
 }
 .article{
   margin: 15px;
