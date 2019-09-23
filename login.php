@@ -1,36 +1,4 @@
 <!DOCTYPE html>
-<?php
-    $errorEmail = '';
-    $errorPassword = '';
-    $email = '';
-    if ($_POST) {
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-        if ($email == '') {
-            $errorEmail = 'Ingresa tu email';
-        } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $errorEmail = 'El email es invalido';
-        }
-        if ($password == '') {
-            $errorPassword = 'Ingresa tu password';
-        }
-        //levanto mi archivo en formato json
-        $archivo = file_get_contents('usuarios.json');
-        //lo transformo a variables en php
-        $usuario = json_decode($archivo, true);
-        if ($usuario['email'] == $email && password_verify($password, $usuario['password'])) {
-
-        } else {
-            $errorEmail = 'Usuario o clave invalidos';
-        }
-        if (empty($errorEmail) && empty($errorPassword)) {
-            header('location:miPerfil.php?email=' . $email);
-        }
-    }
-    require_once('funciones/productos.php');
- ?>
-
-
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
