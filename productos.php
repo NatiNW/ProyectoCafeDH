@@ -1,5 +1,5 @@
 <?php
-  include("encabezado.php");
+  include("encabezado-productos.php");
  ?>
 
 <?php
@@ -12,7 +12,7 @@
 <h1>Productos</h1>
 
 <div class="row">
-    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 productos">
 <h2>Descafeinados</h2>
     <h3>Volluto Decaffeinato</h3>
     <h4>CAFÉ DULCE Y LIGERO</h4>
