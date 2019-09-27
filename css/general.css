@@ -12,7 +12,9 @@ div nav ul li{
 
 
 }
-
+a{
+  color: white;
+}
 .navsuperior{
   background-color: #934F33;
 }
