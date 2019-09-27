@@ -1,7 +1,7 @@
-<div class="container">
+<div class="container navinferior">
   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar">
         <a class="navbar-brand" href="inicio.php">
           <img src="img/pocillo_completo.jpg" alt="Coffee">
         </a>

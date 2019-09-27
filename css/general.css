@@ -1,9 +1,28 @@
-
+body{
+  background-color: #934F33;
+}
 nav a img{
   width: 80px;
   height: 50px;
+
 }
 
+div nav ul li{
+  font-family: 'Lobster', cursive;
+
+
+}
+
+.navsuperior{
+  background-color: #934F33;
+}
+
+
+.navinferior{
+ background-color: #934F33;
+
+
+}
 .inicio-productos {
   text-align: center;
   padding: 25px;
@@ -14,12 +33,30 @@ nav a img{
   background-color: #8B4513;
   padding: 25px;
   color: white;
+
+}
+
+.inicio-lista-1 h3{
+  font-family: 'Lobster', cursive;
+}
+
+.inicio-lista-1 p{
+  font-family: 'Gayathri', sans-serif;
 }
 
 .inicio-lista-2{
   text-align: center;
   background-color: Peru;
   padding: 25px;
+}
+
+.inicio-lista-2 h3{
+  font-family: 'Lobster', cursive;
+
+}
+
+.inicio-lista-1 p{
+  font-family: 'Gayathri', sans-serif;
 }
 
 footer{

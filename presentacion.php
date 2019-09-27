@@ -42,6 +42,8 @@
     </div>
 
 
+
+    </div>
       <div class="row inicio-lista-1">
         <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
           <div class="practicos">

@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Chilanka|Gayathri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/eeaa0807dc.js"></script>
     <link rel="stylesheet" href="css/general.css">
-    
+
 
     <title>Coffee Code</title>
   </head>
 <body>
   <header>
-<div class="container">
+<div class="container navsuperior">
   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-  <nav class="navbar navbar-expand navbar-light bg-light">
+  <nav class="navbar navbar-expand navbar">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
