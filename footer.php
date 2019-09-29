@@ -1,32 +1,46 @@
 <footer>
 
-<div class="row footer-identidad">
-  <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+<div class="row">
+  <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 footer-identidad">
   <h6>Coffee Code</h6>
   <ul>
     <li><a href="index.php">Inicio</a></li>
     <li><a href="productos.php">Productos</a></li>
       <li><a href="shop.php">Tienda</a></li>
     <li><a href="nosotros.php">Nosotros</a></li>
+    <li><a href="faq.php">Preguntas Frecuentes</a></li>
     <li><a href="contacto.php">Contactanos</a></li>
   </ul>
 </div>
 
-<div class="row footer-vacio">
-  <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
 
-  </div>
+  <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+    <div class="div-vacio">
+
+    </div>
+      </div>
+
+
+
+
+<div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 footer-redes">
+  <h6>Redes</h6>
+  <ul>
+    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+  </ul>
 
 </div>
 
-<div class="row footer-redes">
-  <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-  <h6>Redes</h6>
-  <ul>
-    <li><a href="">Facebook</a></li>
-    <li><a href="">Instagram</a></li>
-  </ul>
-  </div>
+</div>
+
+<div class="row">
+
+
+
+  <div class="col-12">
+    <p>Todos los derechos reservados</p>
+      </div>
 
 </div>
     </footer>

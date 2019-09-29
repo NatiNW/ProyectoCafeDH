@@ -36,7 +36,8 @@
     <div id="boton-productos" class="container-fluid">
       <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 inicio-productos">
-        <a class="btn btn-primary" href="productos.html" role="button">Conocé nuestros productos</a>
+
+        <button type="button" class="btn btn-ttc"><a href="productos.php" role="button">Conocé nuestros productos!</a></button>
         </div>
       </div>
     </div>
@@ -48,19 +49,28 @@
         <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
           <div class="practicos">
           <h3>Prácticos</h3>
-          <p>Cápsulas para que las lleves a cualquier lado</p>
+          <p>Llevá tu café a cualquier lado</p>
+            <span style="font-size: 48px;">
+              <i class="fas fa-thumbs-up"></i>
+              </span>
           </div>
         </div>
         <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
           <div class="adaptables">
           <h3>Adaptables</h3>
           <p>Para todos los modelos de máquinas</p>
+            <span style="font-size: 48px;">
+              <i class="fas fa-cog"></i>
+              </span>
           </div>
         </div>
         <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
           <div class="riquisimo">
           <h3>¡Ricos!</h3>
-          <p>Hechos con los más delicados productos</p>
+          <p>Productos de primera calidad</p>
+            <span style="font-size: 48px;">
+              <i class="far fa-grin-hearts"></i>
+              </span>
         </div>
       </div>
       </div>
@@ -71,19 +81,29 @@
         <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
           <div class="compra">
           <h3>Comprá</h3>
-          <p>Desde nuestra web o llamanos al 5555-5555</p>
+          <p>Desde nuestra web o teléfono</p>
+          <span style="font-size: 48px;">
+            <i class="fas fa-shopping-basket"></i>
+            </span>
           </div>
         </div>
         <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
           <div class="paga">
             <h3>Pagá</h3>
-          <p>Pagá Tarjeta de débito, crédito y MercadoPago</p>
+          <p>Con tarjeta de débito o crédito</p>
+          <span style="font-size: 48px;">
+            <i class="fas fa-money-check-alt"></i>
+          </span>
+
           </div>
         </div>
         <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
           <div class="recibilo">
             <h3>Recibilo</h3>
           <p>Con Glovo, Rappi o PedidosYa!</p>
+            <span style="font-size: 48px;">
+              <i class="fas fa-truck"></i>
+          </span>
           </div>
         </div>
       </div>

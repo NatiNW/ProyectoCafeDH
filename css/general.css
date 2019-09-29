@@ -1,5 +1,6 @@
 body{
   background-color: #934F33;
+
 }
 nav a img{
   width: 80px;
@@ -9,25 +10,45 @@ nav a img{
 
 div nav ul li{
   font-family: 'Lobster', cursive;
-
-
-}
-a{
   color: white;
+  font-size: 24px;
+
 }
+
+
+#navbarSupportedContent a{
+  color: white;
+
+}
+
 .navsuperior{
-  background-color: #934F33;
+  background-color: Peru;
+
+
 }
 
 
 .navinferior{
  background-color: #934F33;
 
-
 }
+
+
+
+.btn-ttc{
+  background-color: red;
+}
+
+.btn-ttc a{
+  color: white;
+}
+
 .inicio-productos {
   text-align: center;
-  padding: 25px;
+  padding: 15px;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+
 }
 
 .inicio-lista-1{
@@ -46,6 +67,11 @@ a{
   font-family: 'Gayathri', sans-serif;
 }
 
+.inicio-lista-1 p{
+  font-family: 'Gayathri', sans-serif;
+  }
+
+
 .inicio-lista-2{
   text-align: center;
   background-color: Peru;
@@ -57,17 +83,75 @@ a{
 
 }
 
-.inicio-lista-1 p{
+.preguntas{
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: Peru;
+  border-radius: 5px;
+}
+
+.preguntas h3{
+  font-family: 'Lobster', cursive;
+}
+
+.preguntas h4{
+    font-family: 'Lobster', cursive;
+}
+
+.preguntas p{
   font-family: 'Gayathri', sans-serif;
 }
 
-footer{
+.contacto{
+  background-color: Peru;
+  margin: 50px;
   padding: 20px;
-  background-color: #DEB887;
+  border-radius: 5px;
+}
+
+.contacto label{
+  font-family: 'Lobster', cursive;
+}
+
+.contacto h3{
+    font-family: 'Lobster', cursive;
+}
+
+.contacto p{
+  font-family: 'Gayathri', sans-serif;
+}
+
+.contacto.btn-ttc{
+  background-color: red;
+
+}
+
+
+
+footer{
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px;
+  background-color: #934F33;
   overflow: hidden;
+
 }
 
 footer div ul {
   list-style-type: none;
 
+}
+
+footer div ul li a{
+ font-family: 'Gayathri', sans-serif;
+ color: white;
+}
+
+footer h6{
+  font-family: 'Lobster', cursive;
+  color: white;
+}
+
+.redes a{
+  display: inline;
 }
