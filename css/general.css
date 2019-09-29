@@ -1,29 +1,25 @@
 body{
   background-color: #934F33;
-
 }
 nav a img{
   width: 80px;
   height: 50px;
-
 }
 
 div nav ul li{
   font-family: 'Lobster', cursive;
   color: white;
-  font-size: 24px;
-
+  font-size: 20px;
 }
 
 
 #navbarSupportedContent a{
   color: white;
-
 }
 
 .navsuperior{
   background-color: Peru;
-
+  margin: 0 90px;
 
 }
 
@@ -34,13 +30,15 @@ div nav ul li{
 }
 
 
-
 .btn-ttc{
   background-color: red;
+  height: 100px;
+  width: 400px;
 }
 
 .btn-ttc a{
   color: white;
+  font-size: 30px;
 }
 
 .inicio-productos {
@@ -56,6 +54,7 @@ div nav ul li{
   background-color: #8B4513;
   padding: 25px;
   color: white;
+  margin: 0 15px;
 
 }
 
@@ -76,6 +75,7 @@ div nav ul li{
   text-align: center;
   background-color: Peru;
   padding: 25px;
+  margin: 0 15px;
 }
 
 .inicio-lista-2 h3{
@@ -126,17 +126,40 @@ div nav ul li{
 
 }
 
-
-
 footer{
   margin-left: 50px;
   margin-right: 50px;
   padding: 10px;
   background-color: #934F33;
   overflow: hidden;
-
 }
 
+.carga{
+  background-color: Peru;
+  margin: auto 105px;
+  padding: 25px;
+}
+
+.carga label{
+    font-family: 'Lobster', cursive;
+}
+
+.carga h3{
+    font-family: 'Lobster', cursive;
+}
+.carga textarea{
+      font-family: 'Gayathri', sans-serif;
+}
+
+.carga option{
+      font-family: 'Gayathri', sans-serif;
+}
+
+
+footer{
+  margin-left: 130px;
+
+}
 footer div ul {
   list-style-type: none;
 
