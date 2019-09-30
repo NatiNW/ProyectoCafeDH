@@ -19,19 +19,17 @@ div nav ul li{
 
 .navsuperior{
   background-color: Peru;
-  margin: 0 90px;
 
 }
 
 
 .navinferior{
  background-color: #934F33;
-
 }
 
 
 .btn-ttc{
-  background-color: red;
+  background-color: #B96340;
   height: 100px;
   width: 400px;
 }
@@ -54,7 +52,6 @@ div nav ul li{
   background-color: #8B4513;
   padding: 25px;
   color: white;
-  margin: 0 15px;
 
 }
 
@@ -75,7 +72,6 @@ div nav ul li{
   text-align: center;
   background-color: Peru;
   padding: 25px;
-  margin: 0 15px;
 }
 
 .inicio-lista-2 h3{
@@ -121,17 +117,15 @@ div nav ul li{
   font-family: 'Gayathri', sans-serif;
 }
 
-.contacto.btn-ttc{
-  background-color: red;
+.contacto-btn-ttc{
+  background-color: #B96340;
+  width: 100px;
 
 }
 
 footer{
-  margin-left: 50px;
-  margin-right: 50px;
-  padding: 10px;
   background-color: #934F33;
-  overflow: hidden;
+  margin-top: 25px;
 }
 
 .carga{
@@ -156,18 +150,24 @@ footer{
 }
 
 
-footer{
-  margin-left: 130px;
-
-}
 footer div ul {
   list-style-type: none;
-
 }
 
 footer div ul li a{
  font-family: 'Gayathri', sans-serif;
- color: white;
+  color: white;
+
+}
+
+footer ul{
+  margin: 0px;
+	padding: 0px;
+}
+
+footer li{
+margin: 0px;
+padding: 0px;
 }
 
 footer h6{
@@ -177,4 +177,43 @@ footer h6{
 
 .redes a{
   display: inline;
+}
+
+
+@media only screen and (min-width:780px){
+
+  .btn-ttc {
+    background-color: #B96340;;
+    height: 50px;
+    width: 200px;
+  }
+  .btn-ttc a{
+    color: white;
+    font-size: 20px;
+  }
+
+
+}
+
+
+@media only screen and (min-width:980px){
+
+
+  .btn-ttc {
+    background-color: #B96340;;
+    height: 50px;
+    width: 300px;
+  }
+
+
+}
+
+
+@media only screen and (max-width:1200px){
+  .btn-ttc {
+    background-color: #B96340;;
+    height: 100px;
+    width: 300px;
+  }
+
 }

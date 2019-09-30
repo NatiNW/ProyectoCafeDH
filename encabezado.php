@@ -14,10 +14,10 @@
   </head>
 <body>
   <header>
-<div class="container navsuperior">
+<div class="">
   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
   <nav class="navbar navbar-expand navbar-light bg">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse navsuperior" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link">Llamanos!</a>
