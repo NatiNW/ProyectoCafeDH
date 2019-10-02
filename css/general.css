@@ -19,6 +19,7 @@ div nav ul li{
 
 .navsuperior{
   background-color: Peru;
+  width: 20px;
 
 }
 
@@ -52,7 +53,8 @@ div nav ul li{
   background-color: #8B4513;
   padding: 25px;
   color: white;
-
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .inicio-lista-1 h3{
@@ -72,6 +74,9 @@ div nav ul li{
   text-align: center;
   background-color: Peru;
   padding: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+
 }
 
 .inicio-lista-2 h3{
@@ -126,6 +131,7 @@ div nav ul li{
 footer{
   background-color: #934F33;
   margin-top: 25px;
+
 }
 
 .carga{
