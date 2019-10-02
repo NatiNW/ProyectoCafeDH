@@ -34,9 +34,9 @@
         <p>
       <label for="descripcion_del_producto">Descripción del Producto:</label>
       </p>
-          <textarea name="name" rows="8" cols="80">Descripcion del Producto</textarea>
-        </div>
-        <div class="form-group">
+          <textarea name="name" class="form-control">Descripcion del Producto</textarea>
+
+
         </div>
         <button type="submit" name="button">Enviar</button>
 
