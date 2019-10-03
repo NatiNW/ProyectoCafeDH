@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/eeaa0807dc.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <!--link rel="stylesheet" href="css/estilos.css"-->
 
     <title>Coffee Code</title>
   </head>
