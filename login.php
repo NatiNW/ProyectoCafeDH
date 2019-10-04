@@ -1,4 +1,8 @@
 <?php
+include("encabezado.php");
+include("navegacion.php");
+?>
+<?php
     require_once('funciones/autoload.php');
     $errorEmail = '';
     $errorPassword = '';
@@ -9,30 +13,30 @@
         if ($email == '') {
             $errorEmail = 'Ingresa tu email';
         } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $errorEmail = 'El email es invalido';
+            $errorEmsail = 'El email es invalido';
         }
         if ($password == '') {
             $errorPassword = 'Ingresa tu password';
         }
         if (empty($errorEmail) && empty($errorPassword)) {
-            //levanto mi archivo en formato json
+
             $archivo = file_get_contents('usuarios.json');
-            //lo transformo a variables en php
+
             $usuarios = json_decode($archivo, true);
-            //recorro al array de usuarios
+
             foreach ($usuarios as $usuario) {
                 if ($usuario['email'] == $email && password_verify($password, $usuario['password'])) {
-                    //aqui encontré al usuario y lo logueo
+
                     $_SESSION['email'] = $usuario['email'];
                     $_SESSION['avatar'] = $usuario['avatar'];
                     $_SESSION['admin'] = $usuario['admin'];
                     $_SESSION['id'] = $usuario['id'];
-                    //pregunto si envie el mantenerme logeado
+
                     if(isset($_POST['mantenerme'])) {
-                        //creo una cookie que va a durar 30 dias
+
                         setcookie('email', $email, time() + 60*60*24*30);
                     }
-                    //luego lo redirijo a miPerfil
+
                     header('location:miPerfil.php');
                 }
             }
@@ -40,6 +44,8 @@
         }
     }
 ?>
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -52,9 +58,7 @@
 		<title>Iniciar Sesion</title>
 	</head>
 
-  <?php
-  require("navegacion.php")
-  ?>
+
 	<body>
 <div class="row">
 	<div class="container">
@@ -73,7 +77,7 @@
               <div class="form-group form-check">
                 <input type="checkbox" name="mantenerme" class="form-check-input" id="mantenerme" value="1">
                 <label class="form-check-label" for="mantenerme">Mantenerme Conectado</label>
-              <input type="button" value="Registrarse" onclick="location.href=registro.php"/>
+            
               </div>
               <button type="submit" class="btn btn-primary">Ingresar</button>
             </form>
