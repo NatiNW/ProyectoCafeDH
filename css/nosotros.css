@@ -1,14 +1,12 @@
-.preguntas h4{
+.nosotros h4{
     font-family: 'Lobster', cursive;
 }
 
-.preguntas p{
+.nosotros p{
   font-family: 'Gayathri', sans-serif;
 }
 
 p {
-
-
   width: auto;
   margin: auto;
   text-align: center;
@@ -19,8 +17,14 @@ p {
 .general{
   padding: 29px;
 }
-.nosotros img{
-  width: 100px;
-  text-align: center;
 
+.nosotros.img{
+  width: 100px;
+  padding-left: 50px;
+
+
+}
+.nosotros{
+  background-color: peru;
+  padding-bottom: 20px;
 }
