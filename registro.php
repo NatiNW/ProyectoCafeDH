@@ -1,28 +1,30 @@
 <?php
+include("encabezado.php");
+include("navegacion.php");
+ ?>
+<?php
     require_once('funciones/autoload.php');
-    // var_dump($_POST);
-    // var_dump($_FILES);
+
+
     if ($_POST) {
         $email = $_POST['email'];
         $password = $_POST['password'];
         $nombreArchivo = '';
-        //me faltan las validaciones de formato email, email no repetido, password no vacio y password igual a confirmar password
-        //si subio un archivo lo guardo en la carpeta avatars
-        //pregunto si se subio el archivo exitosamente
+
         if ($_FILES['avatar']['error'] === 0) {
-            //pido la extension del archivo
+
             $ext = pathinfo($_FILES['avatar']['name'], PATHINFO_EXTENSION);
             if ($ext != 'png' && $ext != 'jpg' && $ext != 'jpeg') {
                 $errorAvatar = 'archivo de formato invalido';
             } else {
                 $nombreArchivo = $email . '.' . $ext;
-                //voy a mover el archivo del temporal a mi carpeta avatars
+
                 move_uploaded_file($_FILES['avatar']['tmp_name'], 'avatars/' . $nombreArchivo);
             }
         }
-        //levanto mi archivo en formato json
+
         $archivo = file_get_contents('usuarios.json');
-        //lo transformo a variables en php
+
         $usuarios = json_decode($archivo, true);
         $id = 0;
         foreach ($usuarios as $usuario) {
@@ -31,7 +33,7 @@
             }
         }
         $id++;
-        //formar los datos del usuario
+
         $usuario = [
             'email' => $email,
             'password' => password_hash($password, PASSWORD_DEFAULT),
@@ -39,11 +41,11 @@
             'admin' => false,
             'id' => $id,
         ];
-        //agrego el usuario nuevo al array del json
+
         $usuarios[] = $usuario;
-        //convierto ese usuario en JSON para luego mandarlo a guardar
+
         $usuariosEnJson = json_encode($usuarios);
-        //guardo el usuario en mi json
+
         file_put_contents('usuarios.json', $usuariosEnJson);
         header('location:login.php');
     }
@@ -59,9 +61,7 @@
         <link rel="stylesheet" href="css/general.css">
 		<title>Registro</title>
 	</head>
-  <?php
-include("navegacion.php")
-   ?>
+
 	<body>
 
 	<div class="container">
