@@ -22,8 +22,8 @@
       <input type="text" class="form-control" id="exampleInputText" placeholder="Escribe aquí tu consulta">
     </div>
 
-    <button type="submit" class="btn btn-ttc">Enviar</button>
-    
+    <button type="submit" class="btn contacto-btn-ttc">Enviar</button>
+
   </form>
   </div>
 </div>

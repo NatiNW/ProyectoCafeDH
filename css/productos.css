@@ -1,15 +1,23 @@
 .general{
   padding: 29px;
 }
+.boton{
+  background-color:#B96340;
+  height: 100px;
+  width: 300px;
+}
+.boton a{
+  color: white;
+  font-size: 20px;
+}
 
 .productos img{
   width: 100px;
   text-align: center;
   border-radius: 70%;
-}
-.productos button{
 
 }
+
 .article{
   margin: 15px;
   text-align: center;
@@ -22,13 +30,7 @@ h4 {
   text-align: center;
 }
 
-p {
-  background: #f2f2f2;
-  color: #494949;
-  width: auto;
-  margin: auto;
 
-}
 .content{
   display: flex;
   flex-direction: column;

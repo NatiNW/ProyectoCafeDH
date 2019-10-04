@@ -1,20 +1,24 @@
-.ESENCIA{
-  text-align: center;
-
-
+.preguntas h4{
+    font-family: 'Lobster', cursive;
 }
+
+.preguntas p{
+  font-family: 'Gayathri', sans-serif;
+}
+
 p {
-  background: #f2f2f2;
-  color: #494949;
+
+
   width: auto;
   margin: auto;
   text-align: center;
 
 }
-div.titulo3{
-    font-family: 'Lobster', cursive;
-    text-align: center;
+
+.productos img{
+  width: 100px;
+  text-align: center;
 }
-.container-nosotros{
-  width: 900px;
+.general{
+  padding: 29px;
 }

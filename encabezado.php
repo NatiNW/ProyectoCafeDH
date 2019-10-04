@@ -12,26 +12,30 @@
 
     <title>Coffee Code</title>
   </head>
-  <body>
-    <header>
-  <div class="">
-    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-    <nav class="navbar navbar-expand navbar-light bg">
-      <div class="collapse navbar-collapse navsuperior" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link">Llamanos!</a>
-          </li>
-        </ul>
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link" href="shop.php"><i class="fas fa-shopping-cart"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.php"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a>
-          </li>
-        </ul>
-      </div>
-  </nav>
-  </div>
-  </div>
+<body>
+  <header>
+<div class="">
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+  <nav class="navbar navbar-expand navbar-light bg">
+    <div class="collapse navbar-collapse navsuperior" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link">Llamanos!</a>
+        </li>
+      </ul>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="shop.php"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.php"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registro.php"><i class="fas fa-sign-in-alt"></i> Registrarse</a>
+        </li>
+
+      </ul>
+    </div>
+</nav>
+</div>
+</div>
