@@ -18,6 +18,11 @@
         <input type="text" name="nombre del producto" value="">
       </div>
       <div class="form-group">
+
+          <label for="precio">Precio:</label>
+          <input type="text" name="nombre del producto" value="">
+        </div>
+      <div class="form-group">
         <label for="foto_del_producto">Subir Foto:</label>
                 <input type="file"  id="foto-de-producto" name="foto-de-producto">
               </div>
@@ -34,9 +39,9 @@
         <p>
       <label for="descripcion_del_producto">Descripción del Producto:</label>
       </p>
-          <textarea name="name" class="form-control">Descripcion del Producto</textarea>
-
-
+          <textarea name="name" class= "form-control">Descripcion del Producto</textarea>
+        </div>
+        <div class="form-group">
         </div>
         <button type="submit" name="button">Enviar</button>
 
@@ -48,4 +53,6 @@
 
 <?php
   include("footer.php")
+
+  ?>
 ?>
