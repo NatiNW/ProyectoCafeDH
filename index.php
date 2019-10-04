@@ -2,6 +2,9 @@
   include("encabezado.php");
  ?>
 
+ <?php
+     require_once('funciones/autoload.php');
+ ?>
 <?php
   include("navegacion.php");
   ?>
