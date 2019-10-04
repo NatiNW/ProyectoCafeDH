@@ -20,6 +20,11 @@
   <title></title>
   </head>
   <body>
+  <div class="video">
+<video src="videos/cafevideo.mp4" autoplay poster="posterimage.jpg" autoplay loop>
+
+</video>
+    </video>
     <div class="container">
     <div class="row nosotros">
   <div class="col-12">
