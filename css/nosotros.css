@@ -15,10 +15,12 @@ p {
 
 }
 
-.productos img{
-  width: 100px;
-  text-align: center;
-}
+
 .general{
   padding: 29px;
+}
+.nosotros img{
+  width: 100px;
+  text-align: center;
+
 }
