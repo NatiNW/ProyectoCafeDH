@@ -30,6 +30,10 @@
         <li class="nav-item">
           <a class="nav-link" href="login.php"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registro.php"><i class="fas fa-sign-in-alt"></i> Registrarse</a>
+        </li>
+
       </ul>
     </div>
 </nav>

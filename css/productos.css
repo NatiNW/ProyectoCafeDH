@@ -1,21 +1,23 @@
 .general{
   padding: 29px;
 }
-
-
-img{
-  position: relative;
-  width: 100px;
-  height: auto;
-  max-width: 280px;
-  margin: auto;
-  display: block;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-  border-radius: 55%;
-  box-shadow: 5px 5px 0px #800000;
+.boton{
+  background-color:#B96340;
+  height: 100px;
+  width: 300px;
 }
+.boton a{
+  color: white;
+  font-size: 20px;
+}
+
+.productos img{
+  width: 100px;
+  text-align: center;
+  border-radius: 70%;
+
+}
+
 .article{
   margin: 15px;
   text-align: center;
@@ -28,13 +30,7 @@ h4 {
   text-align: center;
 }
 
-p {
-  background: #f2f2f2;
-  color: #494949;
-  width: auto;
-  margin: auto;
 
-}
 .content{
   display: flex;
   flex-direction: column;

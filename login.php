@@ -1,35 +1,90 @@
+<?php
+    require_once('funciones/autoload.php');
+    $errorEmail = '';
+    $errorPassword = '';
+    $email = '';
+    if ($_POST) {
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        if ($email == '') {
+            $errorEmail = 'Ingresa tu email';
+        } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $errorEmail = 'El email es invalido';
+        }
+        if ($password == '') {
+            $errorPassword = 'Ingresa tu password';
+        }
+        if (empty($errorEmail) && empty($errorPassword)) {
+            //levanto mi archivo en formato json
+            $archivo = file_get_contents('usuarios.json');
+            //lo transformo a variables en php
+            $usuarios = json_decode($archivo, true);
+            //recorro al array de usuarios
+            foreach ($usuarios as $usuario) {
+                if ($usuario['email'] == $email && password_verify($password, $usuario['password'])) {
+                    //aqui encontré al usuario y lo logueo
+                    $_SESSION['email'] = $usuario['email'];
+                    $_SESSION['avatar'] = $usuario['avatar'];
+                    $_SESSION['admin'] = $usuario['admin'];
+                    $_SESSION['id'] = $usuario['id'];
+                    //pregunto si envie el mantenerme logeado
+                    if(isset($_POST['mantenerme'])) {
+                        //creo una cookie que va a durar 30 dias
+                        setcookie('email', $email, time() + 60*60*24*30);
+                    }
+                    //luego lo redirijo a miPerfil
+                    header('location:miPerfil.php');
+                }
+            }
+            $errorEmail = 'Usuario o clave invalidos';
+        }
+    }
+?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Coffe Code</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/asd.css">
-  </head>
-  <body>
-    <form class="form-signin">
-      <div class="text-center mb-4">
-        <h1 class="h3 mb-3 font-weight-normal">Iniciar Sesion</h1>
-      </div>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-      <div class="form-label-group">
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputEmail">Email</label>
-      </div>
+		<link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/login.css">
+		<title>Iniciar Sesion</title>
+	</head>
 
-      <div class="form-label-group">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <label for="inputPassword">Contraseña</label>
-      </div>
+  <?php
+  require("navegacion.php")
+  ?>
+	<body>
+<div class="row">
+	<div class="container">
+		<div class="form-login">
+            <h2>Inicia Sesión</h2>
+            <form method="post" action="login.php">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email" name="email"
+                value="<?php echo $email; ?>">
+              </div>
+              <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" class="form-control" id="password" placeholder="Contraseña" name="password">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" name="mantenerme" class="form-check-input" id="mantenerme" value="1">
+                <label class="form-check-label" for="mantenerme">Mantenerme Conectado</label>
+              <input type="button" value="Registrarse" onclick="location.href=registro.php"/>
+              </div>
+              <button type="submit" class="btn btn-primary">Ingresar</button>
+            </form>
+		</div>
 
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Recuérdame
-        </label>
-      </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Inciar Sesion</button>
-    </form>
+		<?php require('footer.php') ?>
+	</div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  </body>
+	</body>
 </html>
