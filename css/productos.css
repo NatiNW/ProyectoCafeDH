@@ -22,15 +22,14 @@
   margin: 15px;
   text-align: center;
 }
-
-h3{
-  font-family: 'Lobster', cursive;
-}
-
-h4{
-  font-family: 'Lobster', cursive
+h3 {
   text-align: center;
 }
+
+h4 {
+  text-align: center;
+}
+
 
 .content{
   display: flex;
