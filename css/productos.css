@@ -29,7 +29,15 @@ h3 {
 h4 {
   text-align: center;
 }
+h1{
+font-family: "lobster", cursive;
+color:white;
+}
 
+h2{
+font-family: "lobster", cursive;
+color:white; 
+}
 
 .content{
   display: flex;

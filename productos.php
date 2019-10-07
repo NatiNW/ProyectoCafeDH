@@ -22,7 +22,7 @@
 
   <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
   <h3>Arpeggio Decaffeinato</h3>
-  <h4>CAFÉ INTENSO Y CREMOSO</h4>
+  <h4>CAFÉ INTENSO</h4>
   <div class="">
   <img src="img/cap2.jpg" alt="">
     <button type="button" class="btn btn-ttc"><a href="tienda.php" role="button">Ver Mas!</a></button>
