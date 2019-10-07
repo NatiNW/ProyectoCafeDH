@@ -127,17 +127,16 @@ div nav ul li{
   width: 50px;
 
 }
+  .Bienvenido{
+   font-family: 'Lobster', cursive;
+   font-size: 30px;
+   color:black;
+}
+
 .Deslogearme{
   background-color:#B96340;
-}
-.Bienvenido{
- font-family: 'Lobster', cursive;
- font-size: 30px;
- color:black;
 
-}
-
-.perfil{
+.col-12 {
   background-color:Peru;
   text-align: center;
   padding-top:10px;
@@ -253,6 +252,12 @@ footer h6{
     margin-right: 15px;
   }
 
+  .Bienvenido{
+   font-family: 'Lobster', cursive;
+   font-size: 20px;
+   color:black;
+}
+
   footer{
     margin-left: 100px;
 
@@ -278,6 +283,12 @@ footer h6{
     margin-right: 15px;
 
   }
+
+  .Bienvenido{
+   font-family: 'Lobster', cursive;
+   font-size: 20px;
+   color:black;
+}
 
   footer{
     margin-left: 115px;
