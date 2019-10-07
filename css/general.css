@@ -9,12 +9,14 @@ nav a img{
 div nav ul li{
   font-family: 'Lobster', cursive;
   color: white;
-  font-size: 20px;
+  font-size: 10px;
+
 }
 
 
 #navbarSupportedContent a{
   color: white;
+  display: inline-block;
 }
 
 .navsuperior{
@@ -30,13 +32,13 @@ div nav ul li{
 
 .btn-ttc{
   background-color: #B96340;
-  height: 100px;
-  width: 400px;
+  height: 50px;
+  width: 200px;
 }
 
 .btn-ttc a{
   color: white;
-  font-size: 30px;
+  font-size: 10px;
 }
 
 .inicio-productos {
@@ -54,19 +56,27 @@ div nav ul li{
   color: white;
   margin-left: 10px;
   margin-right: 10px;
+
 }
 
 .inicio-lista-1 h3{
   font-family: 'Lobster', cursive;
+  font-size: 20px;
 }
 
 .inicio-lista-1 p{
   font-family: 'Gayathri', sans-serif;
+  font-size: 10px;
 }
 
 .inicio-lista-1 p{
   font-family: 'Gayathri', sans-serif;
   }
+
+.inicio-lista-1 span{
+ font-size: 30px;
+}
+
 
 
 .inicio-lista-2{
@@ -82,6 +92,16 @@ div nav ul li{
   font-family: 'Lobster', cursive;
 
 }
+
+.inicio-lista-2 p{
+  font-family: 'Gayathri', sans-serif;
+  font-size: 10px;
+}
+
+.inicio-lista-2 span{
+ font-size: 20px;
+}
+
 
 .preguntas{
   margin-left: 50px;
@@ -128,13 +148,6 @@ div nav ul li{
 
 }
 
-footer{
-  background-color: #934F33;
-  margin-top: 25px;
-
-
-}
-
 .carga{
   background-color: Peru;
   margin: auto 105px;
@@ -159,15 +172,14 @@ footer{
       font-family: 'Gayathri', sans-serif;
 }
 
-
-
 footer{
+  background-color: #934F33;
+  margin-top: 25px;
   margin-left: 130px;
-
 }
+
 footer div ul {
   list-style-type: none;
-
 }
 
 footer div ul li a{
@@ -180,20 +192,7 @@ footer h6{
   color: white;
 }
 
-.redes a{
-  display: inline;
 
-}
-
-footer div ul {
-  list-style-type: none;
-}
-
-footer div ul li a{
- font-family: 'Gayathri', sans-serif;
-  color: white;
-
-}
 
 footer ul{
   margin: 0px;
@@ -215,13 +214,24 @@ footer h6{
 }
 
 
+
 @media only screen and (min-width:768px){
+
+  div nav ul li{
+    color: white;
+    font-size: 20px;
+  }
+
+  nav a img{
+    width: 80px;
+    height: 50px;
+  }
 
   .btn-ttc {
     background-color: #B96340;
-    height: 50px;
-    width: 200px;
+    
   }
+
   .btn-ttc a{
     color: white;
     font-size: 20px;
@@ -243,23 +253,97 @@ footer h6{
     margin-right: 50px;
 
 }
+
+.inicio-productos {
+  text-align: center;
+  padding: 15px;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+
+}
+
+.inicio-lista-1{
+  text-align: center;
+  background-color: #8B4513;
+  padding: 25px;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.inicio-lista-1 h3{
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+}
+
+.inicio-lista-1 p{
+  font-family: 'Gayathri', sans-serif;
+  font-size: 20px;
+}
+
+.inicio-lista-1 p{
+  font-family: 'Gayathri', sans-serif;
+  }
+
+.inicio-lista-1 span{
+   font-size: 48px;
+  }
+
+
+
+.inicio-lista-2{
+  text-align: center;
+  background-color: Peru;
+  padding: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.inicio-lista-2 h3{
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+
+}
+
+.inicio-lista-2 p{
+  font-family: 'Gayathri', sans-serif;
+  font-size: 20px;
+}
+
+.inicio-lista-2 span{
+ font-size: 48px;
+}
+
+
 }
 
 
 @media only screen and (min-width:1024px){
+
+  div nav ul li{
+    font-size: 20px;
+
+  }
+
+  nav a img{
+    width: 80px;
+    height: 50px;
+  }
+
   .btn-ttc {
-    background-color: red;
-    height: 100px;
-    width: 300px;
+    background-color: #B96340;
+    height: 70px;
+    width: 350px;
   }
   .navsuperior{
-    width: 900px;
+    width: 700px;
     margin-left: 20px;
     margin-right: 15px;
 
   }
 
   footer{
-    margin-left: 115px;
+    margin-left: 155px;
   }
 }

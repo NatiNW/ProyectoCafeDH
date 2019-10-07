@@ -1,9 +1,8 @@
 <?php
+require_once('funciones/autoload.php');
 include("encabezado.php");
 include("navegacion.php");
- ?>
-<?php
-    require_once('funciones/autoload.php');
+
 
 
     if ($_POST) {

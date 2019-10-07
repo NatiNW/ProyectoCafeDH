@@ -1,9 +1,8 @@
 <?php
+require_once('funciones/autoload.php');
 include("encabezado.php");
 include("navegacion.php");
-?>
-<?php
-    require_once('funciones/autoload.php');
+
     $errorEmail = '';
     $errorPassword = '';
     $email = '';
@@ -36,8 +35,8 @@ include("navegacion.php");
 
                         setcookie('email', $email, time() + 60*60*24*30);
                     }
-
-                    header('location:miPerfil.php');
+                    var_dump($_SESSION);
+                    //header('location:miPerfil.php');
                 }
             }
             $errorEmail = 'Usuario o clave invalidos';
@@ -77,7 +76,7 @@ include("navegacion.php");
               <div class="form-group form-check">
                 <input type="checkbox" name="mantenerme" class="form-check-input" id="mantenerme" value="1">
                 <label class="form-check-label" for="mantenerme">Mantenerme Conectado</label>
-            
+
               </div>
               <button type="submit" class="btn btn-primary">Ingresar</button>
             </form>

@@ -1,4 +1,5 @@
 <?php
+  require_once('funciones/autoload.php');
   include("encabezado.php");
   include("navegacion.php");
   ?>
@@ -6,7 +7,7 @@
 
 <div class="container productos">
 
-  <h1>Productos</h1>
+
   <div class="">
   <h2>Descafeinados</h2>
   <div class="row inicio-lista-1">
