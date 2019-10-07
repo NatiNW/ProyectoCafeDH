@@ -147,6 +147,24 @@ div nav ul li{
   width: 50px;
 
 }
+<<<<<<< HEAD
+  .Bienvenido{
+   font-family: 'Lobster', cursive;
+   font-size: 30px;
+   color:black;
+}
+
+.Deslogearme{
+  background-color:#B96340;
+
+.col-12 {
+  background-color:Peru;
+  text-align: center;
+  padding-top:10px;
+  margin: 50px;
+}
+=======
+>>>>>>> a0d6dbdd1e792f8cd450eeb75aa1736a8b765db5
 
 .carga{
   background-color: Peru;
@@ -213,8 +231,6 @@ footer h6{
   display: inline;
 }
 
-
-
 @media only screen and (min-width:768px){
 
   div nav ul li{
@@ -229,7 +245,7 @@ footer h6{
 
   .btn-ttc {
     background-color: #B96340;
-    
+
   }
 
   .btn-ttc a{
@@ -242,6 +258,12 @@ footer h6{
     margin-left: 20px;
     margin-right: 15px;
   }
+
+  .Bienvenido{
+   font-family: 'Lobster', cursive;
+   font-size: 20px;
+   color:black;
+}
 
   footer{
     margin-left: 100px;
@@ -342,6 +364,12 @@ footer h6{
     margin-right: 15px;
 
   }
+
+  .Bienvenido{
+   font-family: 'Lobster', cursive;
+   font-size: 20px;
+   color:black;
+}
 
   footer{
     margin-left: 155px;

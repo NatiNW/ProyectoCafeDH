@@ -78,7 +78,7 @@ include("navegacion.php");
                 <label class="form-check-label" for="mantenerme">Mantenerme Conectado</label>
 
               </div>
-              <button type="submit" class="btn btn-primary">Ingresar</button>
+              <button type="submit" class="ingreso">Ingresar</button>
             </form>
 		</div>
 

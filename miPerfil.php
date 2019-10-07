@@ -14,10 +14,6 @@
     }
     echo 'Bienvenido ' . $_SESSION['email'];
 ?>
-
-
-
-<form class="" action="logout.php" method="post">
+<form class="" action="logout.php" method="post" >
     <button type="submit" name="button">Deslogearme</button>
 </form>
-<a href="logout.php">Salir</a>
