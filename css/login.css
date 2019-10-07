@@ -1,3 +1,26 @@
-.main-nav{
-    margin-top: 10px;
+h2 {
+  font-family: 'Lobster', cursive;
+color: black;
+}
+.form-login {
+  background-color: peru;
+  padding: 20px;
+
+}
+label{
+  color: black;
+font-family: 'Lobster';
+}
+.botondeingreso{
+background-color: #b96340;
+font-family: "lobster";
+color: white;
+font-size: 30px;
+}
+
+.ingreso{
+  background-color: #b96340;
+  font-family: "lobster";
+  color: white;
+  font-size: 30px;
 }

@@ -127,6 +127,7 @@ div nav ul li{
   width: 50px;
 
 }
+<<<<<<< HEAD
   .Bienvenido{
    font-family: 'Lobster', cursive;
    font-size: 30px;
@@ -142,11 +143,9 @@ div nav ul li{
   padding-top:10px;
   margin: 50px;
 }
+=======
+>>>>>>> a0d6dbdd1e792f8cd450eeb75aa1736a8b765db5
 
-.salir{
-  text-decoration: none;
-  color: white;
-}
 footer{
   background-color: #934F33;
   margin-top: 25px;
@@ -232,7 +231,6 @@ footer h6{
 .redes a{
   display: inline;
 }
-
 
 @media only screen and (min-width:768px){
 

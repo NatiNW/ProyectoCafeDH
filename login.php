@@ -77,9 +77,9 @@ include("navegacion.php");
               <div class="form-group form-check">
                 <input type="checkbox" name="mantenerme" class="form-check-input" id="mantenerme" value="1">
                 <label class="form-check-label" for="mantenerme">Mantenerme Conectado</label>
-            
+
               </div>
-              <button type="submit" class="btn btn-primary">Ingresar</button>
+              <button type="submit" class="ingreso">Ingresar</button>
             </form>
 		</div>
 
