@@ -1,10 +1,4 @@
 <?php
-require_once('funciones/autoload.php');
-include("encabezado.php");
-include("navegacion.php");
-
-
-
     if ($_POST) {
         $email = $_POST['email'];
         $password = $_POST['password'];
@@ -48,6 +42,9 @@ include("navegacion.php");
         file_put_contents('usuarios.json', $usuariosEnJson);
         header('location:login.php');
     }
+require_once('funciones/autoload.php');
+include("encabezado.php");
+include("navegacion.php");
 ?>
 <!DOCTYPE html>
 <html>

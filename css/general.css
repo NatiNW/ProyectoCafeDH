@@ -147,7 +147,6 @@ div nav ul li{
   width: 50px;
 
 }
-<<<<<<< HEAD
   .Bienvenido{
    font-family: 'Lobster', cursive;
    font-size: 30px;
@@ -156,15 +155,14 @@ div nav ul li{
 
 .Deslogearme{
   background-color:#B96340;
+}
 
-.col-12 {
+.miperfil {
   background-color:Peru;
   text-align: center;
   padding-top:10px;
   margin: 50px;
 }
-=======
->>>>>>> a0d6dbdd1e792f8cd450eeb75aa1736a8b765db5
 
 .carga{
   background-color: Peru;
@@ -203,14 +201,13 @@ footer div ul {
 footer div ul li a{
  font-family: 'Gayathri', sans-serif;
  color: white;
+ font-size: 15px;
 }
 
 footer h6{
   font-family: 'Lobster', cursive;
   color: white;
 }
-
-
 
 footer ul{
   margin: 0px;
@@ -234,8 +231,10 @@ footer h6{
 @media only screen and (min-width:768px){
 
   div nav ul li{
+    font-family: 'Lobster', cursive;
     color: white;
     font-size: 20px;
+
   }
 
   nav a img{
@@ -245,6 +244,7 @@ footer h6{
 
   .btn-ttc {
     background-color: #B96340;
+    width: 300px;
 
   }
 
@@ -265,10 +265,6 @@ footer h6{
    color:black;
 }
 
-  footer{
-    margin-left: 100px;
-
-  }
   .carga{
     padding: 25px;
     margin-left: 50px;
@@ -336,6 +332,20 @@ footer h6{
 .inicio-lista-2 span{
  font-size: 48px;
 }
+footer{
+  margin-left: 200px;
+
+}
+
+footer div ul li a{
+ font-size: 15px;
+}
+
+footer h6{
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 20px;
+}
 
 
 }
@@ -374,4 +384,16 @@ footer h6{
   footer{
     margin-left: 155px;
   }
+
+  footer div ul li a{
+   font-size: 15px;
+  }
+
+  footer h6{
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 20px;
+  }
+
+
 }

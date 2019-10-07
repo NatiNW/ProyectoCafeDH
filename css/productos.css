@@ -27,6 +27,7 @@ h3 {
 
 h4 {
   text-align: center;
+  font-size: 15px;
 }
 h1{
 font-family: "lobster", cursive;
@@ -35,7 +36,7 @@ color:white;
 
 h2{
 font-family: "lobster", cursive;
-color:white; 
+color:white;
 }
 
 .content{
@@ -45,6 +46,10 @@ color:white;
 .navbar-text {
   display: -webkit-inline-box;
 
+}
+
+.inicio-lista-1 button{
+  width: 150px;
 }
 
 @media (max-width: 320px) {

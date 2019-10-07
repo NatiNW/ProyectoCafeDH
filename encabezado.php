@@ -29,18 +29,18 @@
         <li class="nav-item">
           <a class="nav-link" href="shop.php"><i class="fas fa-shopping-cart"></i></a>
         </li>
-        <?php if(!isset($_SESSION)){?>
-          <?php var_dump ($_SESSION)?>
+        <?php if(!isset($_SESSION) || empty($_SESSION['email'])){?>
+
         <li class="nav-item">
           <a class="nav-link" href="login.php"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a>
+          <a class="nav-link" href="registro.php"><i class="fas fa-sign-in-alt"></i> Registrarse</a>
         </li>
 
 
         <?php } else {?>
         <li class="nav-item">
-          Bienvenido <?= $_SESSION['email']?>
+          Bienvenido <?= $_SESSION['email'] ?? ''?>
           <a class="nav-link" href="logout.php"> Logout</a>
-          <a class="nav-link" href="registro.php"><i class="fas fa-sign-in-alt"></i> Registrarse</a>
         </li>
 <?php } ?>
 

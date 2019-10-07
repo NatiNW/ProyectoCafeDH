@@ -1,5 +1,7 @@
 <?php
-    require_once('funciones/autoload.php');
+require_once('funciones/autoload.php');
+include("encabezado.php");
+include("navegacion.php");
     if (isset($_COOKIE['email'])) {
         $_SESSION['email'] = $_COOKIE['email'];
         $_SESSION['avatar'] = '';
@@ -12,8 +14,14 @@
     if ($_SESSION['admin']==true) {
         echo 'Ud es un Admin->>>>>>';
     }
-    echo 'Bienvenido ' . $_SESSION['email'];
+    $bienvenida = 'Bienvenido ' . $_SESSION['email'];
 ?>
-<form class="" action="logout.php" method="post" >
-    <button type="submit" name="button">Deslogearme</button>
+<div class="row perfil">
+  <div class="col-12 miperfil">
+<p class="Bienvenido"> <?= $bienvenida ?? '' ?></p>
+<form class="perfil" action="logout.php" method="post">
+    <button type="submit" class="Deslogearme">Deslogearme</button>
 </form>
+<a class="salir"href="logout.php">Salir</a>
+</div>
+</div>

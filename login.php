@@ -36,7 +36,7 @@ include("navegacion.php");
                         setcookie('email', $email, time() + 60*60*24*30);
                     }
                     var_dump($_SESSION);
-                    //header('location:miPerfil.php');
+                    header('location:miPerfil.php');
                 }
             }
             $errorEmail = 'Usuario o clave invalidos';
