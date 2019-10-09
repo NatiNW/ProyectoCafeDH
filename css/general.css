@@ -147,21 +147,13 @@ div nav ul li{
   width: 50px;
 
 }
-  .Bienvenido{
-   font-family: 'Lobster', cursive;
-   font-size: 30px;
-   color:black;
-}
 
-.Deslogearme{
-  background-color:#B96340;
-}
 
-.miperfil {
-  background-color:Peru;
-  text-align: center;
-  padding-top:10px;
-  margin: 50px;
+footer{
+  background-color: #934F33;
+  margin-top: 25px;
+
+
 }
 
 .carga{

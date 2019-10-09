@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/eeaa0807dc.js"></script>
     <link rel="stylesheet" href="css/general.css">
-
+    <link rel="stylesheet" href="css/miPerfil.css">
 
     <title>Coffee Code</title>
   </head>

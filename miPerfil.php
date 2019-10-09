@@ -1,7 +1,8 @@
 <?php
-require_once('funciones/autoload.php');
-include("encabezado.php");
-include("navegacion.php");
+    require_once('funciones/autoload.php');
+     include("encabezado.php");
+     include("navegacion.php");
+
     if (isset($_COOKIE['email'])) {
         $_SESSION['email'] = $_COOKIE['email'];
         $_SESSION['avatar'] = '';
