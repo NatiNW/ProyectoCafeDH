@@ -1,10 +1,7 @@
-font-family: 'Lobster', cursive;
-width: 50px;
-
-}
 .Deslogearme{
 background-color:#B96340;
 }
+
 .Bienvenido{
 font-family: 'Lobster', cursive;
 font-size: 30px;
@@ -23,6 +20,7 @@ margin: 50px;
 text-decoration: none;
 color: white;
 }
+
 footer{
 background-color: #934F33;
 margin-top: 25px;
