@@ -1,0 +1,29 @@
+font-family: 'Lobster', cursive;
+width: 50px;
+
+}
+.Deslogearme{
+background-color:#B96340;
+}
+.Bienvenido{
+font-family: 'Lobster', cursive;
+font-size: 30px;
+color:black;
+
+}
+
+.perfil{
+background-color:Peru;
+text-align: center;
+padding-top:10px;
+margin: 50px;
+}
+
+.salir{
+text-decoration: none;
+color: white;
+}
+footer{
+background-color: #934F33;
+margin-top: 25px;
+}
