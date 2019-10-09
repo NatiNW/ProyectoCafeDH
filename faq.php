@@ -1,4 +1,5 @@
 <?php
+  require_once('funciones/autoload.php');
   include("encabezado.php");
  ?>
 
@@ -27,7 +28,7 @@
     <h4>¿Hacen descuentos por cantidad?</h4>
       <p>Tenemos descuentos a partir de la primera docena de cápsulas. Te sugerimos que nos sigas en nuestras redes
       sociales para enterarte de nuestras promociones semanales.</p>
-  
+
   </div>
 </div>
 

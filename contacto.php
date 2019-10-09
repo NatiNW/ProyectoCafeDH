@@ -1,4 +1,5 @@
 <?php
+  require_once('funciones/autoload.php');
   include("encabezado.php");
  ?>
 
