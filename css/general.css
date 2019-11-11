@@ -149,13 +149,6 @@ div nav ul li{
 }
 
 
-footer{
-  background-color: #934F33;
-  margin-top: 25px;
-
-
-}
-
 .carga{
   background-color: Peru;
   margin: auto 105px;
@@ -216,8 +209,13 @@ footer h6{
   color: white;
 }
 
-.redes a{
-  display: inline;
+.footer-identidad{
+  padding-left: 25px;
+}
+
+.footer-redes {
+  padding-left: 25px;
+
 }
 
 @media only screen and (min-width:768px){
@@ -236,7 +234,7 @@ footer h6{
 
   .btn-ttc {
     background-color: #B96340;
-    width: 300px;
+    width: 350px;
 
   }
 
@@ -251,11 +249,7 @@ footer h6{
     margin-right: 15px;
   }
 
-  .Bienvenido{
-   font-family: 'Lobster', cursive;
-   font-size: 20px;
-   color:black;
-}
+
 
   .carga{
     padding: 25px;
@@ -324,8 +318,9 @@ footer h6{
 .inicio-lista-2 span{
  font-size: 48px;
 }
-footer{
-  margin-left: 200px;
+
+.footer-identidad{
+  padding-left: 35px;
 
 }
 
@@ -359,7 +354,9 @@ footer h6{
     background-color: #B96340;
     height: 70px;
     width: 350px;
+
   }
+
   .navsuperior{
     width: 700px;
     margin-left: 20px;
@@ -367,14 +364,15 @@ footer h6{
 
   }
 
-  .Bienvenido{
-   font-family: 'Lobster', cursive;
-   font-size: 20px;
-   color:black;
-}
+  .btn-ttc a{
+    color: white;
+    font-size: 30px;
+  }
 
-  footer{
-    margin-left: 155px;
+
+
+  .footer-identidad{
+    padding-left: 40px;
   }
 
   footer div ul li a{

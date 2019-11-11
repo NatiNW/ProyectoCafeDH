@@ -40,6 +40,11 @@
         <?php } else {?>
         <li class="nav-item">
           Bienvenido <?= $_SESSION['email'] ?? ''?>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="miPerfil.php">Mi Perfil</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="logout.php"> Logout</a>
         </li>
 <?php } ?>
