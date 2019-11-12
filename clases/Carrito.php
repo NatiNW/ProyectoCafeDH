@@ -18,6 +18,13 @@ class Carrito{
 
  public function quitarProducto(Producto $producto){
 
+   foreach($array as $elementKey => $element) {
+       foreach($element as $valueKey => $value) {
+           if($valueKey == 'id' && $value == 'searched_value'){
+               unset($array[$elementKey]);
+           }
+       }
+
 
  }
 
@@ -30,9 +37,6 @@ public function getUsuario(){
      return $this->usuario
 
 }
-
-
-
 
 
 
