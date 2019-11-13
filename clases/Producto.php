@@ -54,7 +54,7 @@ class Producto{
     return $this->foto;
   }
 
-  public function setFoto(){
+  public function setFoto($foto){
     $this->foto=$foto;
   }
 

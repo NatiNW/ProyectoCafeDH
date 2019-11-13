@@ -17,7 +17,7 @@ class Administrador {
     return $this->nombre;
     }
 
-  public function setNombre(){
+  public function setNombre($nombre){
     $this->nombre=$nombre;
   }
 
@@ -26,7 +26,7 @@ class Administrador {
     return $this->email;
     }
 
-  public function setEmail(){
+  public function setEmail($email){
     $this->email=$email;
   }
 
@@ -34,7 +34,7 @@ class Administrador {
     return $this->password;
   }
 
-  public function setPassword(){
+  public function setPassword($password){
     $this->password=$password;
   }
 
@@ -42,7 +42,7 @@ class Administrador {
     return $this->avatar;
   }
 
-  public function setAvatar(){
+  public function setAvatar($avatar){
     $this->avatar=$avatar;
   }
 
