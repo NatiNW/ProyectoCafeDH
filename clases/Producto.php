@@ -7,6 +7,7 @@ class Producto{
   private $stock;
   private $foto;
   private $categoria;
+  private $id;
 
 
 
@@ -23,7 +24,7 @@ class Producto{
     return $this->nombreProducto;
     }
 
-  public function setNombreProducto(){
+  public function setNombreProducto($nombreProducto){
     $this->nombreProducto=$nombreProducto;
   }
 
@@ -31,7 +32,7 @@ class Producto{
     return $this->descripcion;
   }
 
-  public function setDescripcion(){
+  public function setDescripcion($descripcion){
     $this->descripcion=$descripcion;
   }
 
@@ -39,14 +40,14 @@ class Producto{
     return $this->precio;
   }
 
-  public function setPrecio(){
+  public function setPrecio($precio){
     $this->precio=$precio;
   }
   public function getStock(){
     return $this->stock;
   }
 
-  public function setStock(){
+  public function setStock($stock){
     $this->stock=$stock;
   }
   public function getFoto(){
@@ -61,8 +62,16 @@ class Producto{
     return $this->categoria;
   }
 
-  public function setCategoria(){
+  public function setCategoria($categoria){
     $this->categoria=$categoria;
+  }
+
+  public function getId(){
+    return $this->id;
+  }
+
+  public function setId($id){
+    $this->id=$id;
   }
 
 }

@@ -17,6 +17,13 @@ $errorFoto = '';
 $errorPrecio = '';
 
 
+$nombreProducto = '';
+$descripcion = '';
+$precio = '';
+$stock ='';
+$foto = '';
+$categoria = '';
+
 if($_POST) {
   $nombreProducto = $_POST['nombre_producto'];
   $descripcion = $_POST['descripcion'];
@@ -34,54 +41,62 @@ if($_POST) {
       } else {
           $foto = $nombreProducto . '.' . $ext;
 
-          move_uploaded_file($_FILES['foto']['tmp_name'], 'productos/' . $nombreProducto);
+          move_uploaded_file($_FILES['foto']['tmp_name'], 'img/' . $foto);
       }
     }
 
-    if(!isset ($_POST['nombre_producto']) && empty ($_POST ['nombre_producto'])){
-      $errorNombreProducto ['nombre_producto'][]= 'Debes ponerle un nombre al Producto';
+    if(empty($_POST['nombre_producto'])){
+      $errorNombreProducto = 'Debes ponerle un nombre al Producto';
     }
 
-    if(!isset ($_POST['descripcion']) && empty ($_POST ['descripcion'])){
-      $errorDescripcion ['descripcion'][]= 'Debes incluir la descripción del Producto';
+    if(empty($_POST['descripcion'])){
+      $errorDescripcion = 'Debes incluir la descripción del Producto';
     }
 
-    if(!isset ($_POST['stock']) && empty ($_POST ['stock'])){
-      $errorStock ['stock'][]= 'Falta informar el stock del Producto';
+    if(!isset($_POST['stock']) && empty($_POST ['stock'])){
+      $errorStock = 'Falta informar el stock del Producto';
     }
 
-    if(is_numeric ($_POST['stock'])==false){
-      $errorStock ['stock'][]= 'El stock debe ser un número';
+    if(is_numeric($_POST['stock'])==false){
+      $errorStock = 'El stock debe ser un número';
     }
 
     if(is_numeric($_POST['precio'])==false){
-      $errorPrecio ['precio'][]= 'El precio debe ser un numero';
+      $errorPrecio = 'El precio debe ser un numero';
     }
 
-    if(!isset ($_POST['precio']) && empty ($_POST ['precio']){
-      $errorPrecio ['precio'][] = 'Falta informar el precio del Producto';
+    if(!isset($_POST['precio']) && empty($_POST['precio'])){
+      $errorPrecio = 'Falta informar el precio del Producto';
     }
 
-    if(empty($_POST['foto'])){
-      $errorFoto['foto'][]='Falta agregar una foto del Producto'
+
+    if (empty($errorNombreProducto) && empty($errorDescripcion)&&empty($errorStock)&&empty($errorPrecio)&&empty($errorFoto)
+    ) {
+      $prod = new Producto($nombreProducto,$descripcion,$precio,$stock,$foto,$categoria);
+      $nombre = 'Nati';
+      $email = 'nati@nati.com';
+
+      $db = new Administrador($nombre,$email);
+
+      $db->altaDeProducto($prod);
+
+      $nombreProducto = '';
+      $descripcion = '';
+      $precio = '';
+      $stock ='';
+      $foto = '';
+      $categoria = '';
+
+
     }
+
   }
 
-  $prod = new Producto($nombreProducto,$descripcion,$precio,$stock,$foto,$categoria);
-  $nombre = 'Nati';
-  $email = 'nati@nati.com';
-  $admin= new Administrador($nombre,$email);
-  $conex = new PDO('mysql:host=localhost;dbname=proyectoCafe', 'root', '');
 
 
-  $db = new Administrador($nombre,$email);
-
-  $db->altaDeProducto($prod,$conex);
-
-  $admin->altaDeProducto($prod);
 
 
-}?>
+?>
 
 
 <div class="row carga">
@@ -110,7 +125,7 @@ if($_POST) {
           <small style="color:red"><?= $errorStock ?? '' ?> </small>
       <div class="form-group">
         <label for="foto_del_producto">Subir Foto:</label>
-                <input type="file" id="foto-de-producto" name="foto" value="<?=$foto?>">
+                <input type="file" id="foto-de-producto" name="foto">
               </div>
               <small style="color:red"><?= $errorFoto ?? '' ?> </small>
         <div class="form-group">

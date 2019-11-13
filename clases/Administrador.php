@@ -1,6 +1,6 @@
 <?php
 
-class Administrador extends Usuario{
+class Administrador {
   private $nombre;
   private $email;
   private $password;
@@ -71,13 +71,13 @@ class Administrador extends Usuario{
 
 }
 
-public function bajaDeProducto($producto){
+public function bajaDeProducto($productos){
   $conex = new PDO('mysql:host=localhost;dbname=proyectoCafe', 'root', '');
 
-$nombreProducto = $producto->getNombreProducto();
-$sql = 'DELETE from Productos (nombreProducto) WHERE VALUES (:nombreProducto)';
+$id = $producto->getId();
+$sql = 'DELETE from Productos  WHERE id = :id';
 $sentencia = $conex->prepare($sql);
-$sentencia->bindValue(':nombreProducto', $nombreProducto);
+$sentencia->bindValue(':id', $id);
 $sentencia->execute();
 
 }
