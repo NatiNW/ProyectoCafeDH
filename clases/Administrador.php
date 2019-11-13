@@ -1,6 +1,6 @@
 <?php
 
-class Administrador {
+class Administrador extends Usuario{
   private $nombre;
   private $email;
   private $password;
@@ -70,6 +70,18 @@ class Administrador {
     $sentencia->execute();
 
 }
+
+public function bajaDeProducto($producto){
+  $conex = new PDO('mysql:host=localhost;dbname=proyectoCafe', 'root', '');
+
+$nombreProducto = $producto->getNombreProducto();
+$sql = 'DELETE from Productos (nombreProducto) WHERE VALUES (:nombreProducto)';
+$sentencia = $conex->prepare($sql);
+$sentencia->bindValue(':nombreProducto', $nombreProducto);
+$sentencia->execute();
+
+}
+
 }
 
 
